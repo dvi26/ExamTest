@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personas</title>
+</head>
+<body>
+    <h1>Gestión de Personas</h1>
+
+    <div style="text-align: center; margin: 20px;">
+        <button id="btnListar">Listar Personas</button>
+    </div>
+
+    <div id="addPersona" style="margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h2>Añadir/Editar Persona</h2>
+        <label for="inputNombre">Nombre:</label>
+        <input type="text" id="inputNombre" placeholder="Nombre" style="margin: 10px; padding: 8px; width: 100%;">
+
+        <label for="inputFoto">Foto URL:</label>
+        <input type="text" id="inputFoto" placeholder="URL de la Foto" style="margin: 10px; padding: 8px; width: 100%;">
+
+        <label for="inputFechaNac">Fecha de Nacimiento:</label>
+        <input type="date" id="inputFechaNac" style="margin: 10px; padding: 8px; width: 100%;">
+
+        <button id="btnAdd" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">
+            Añadir
+        </button>
+    </div>
+
+    <div id="contenido" style="margin: 20px;">
+        <!-- Aquí se mostrarán las personas obtenidas -->
+    </div>
+
+    <script src="../js/scriptApi.js"></script>
+</body>
+</html>
